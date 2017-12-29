@@ -131,9 +131,9 @@ func register(w http.ResponseWriter, r *http.Request) {
 
 	users := QueryUser(username)
 
-	fmt.Printf("%+v\n", (user{}))
+	// fmt.Printf("%+v\n", (user{}))
 
-	fmt.Printf("%+v\n", users)
+	// fmt.Printf("%+v\n", users)
 
 	//perbandingan user yang di post (users{}) dengan user yang ada di database users
 	if (user{}) == users {
@@ -190,7 +190,6 @@ func login(w http.ResponseWriter, r *http.Request) {
 		http.Redirect(w, r, "/", 302)
 	} else {
 		//login failed
-		fmt.Println("Gagal Login")
 		http.Redirect(w, r, "/login", 302)
 	}
 }
