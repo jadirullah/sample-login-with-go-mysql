@@ -11,7 +11,7 @@ berikut petunjuk penggunaanya :)
 
 ```
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) DEFAULT NULL,
   `first_name` varchar(200) NOT NULL,
   `last_name` varchar(200) NOT NULL,
