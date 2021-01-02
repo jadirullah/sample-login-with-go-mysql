@@ -24,7 +24,16 @@ CREATE TABLE `users` (
 
  ```git clone https://github.com/jadirullah/sample-login-with-go-mysql.git```
 
-- terakhir, masuk ke dalam folder project go jalankan perintah 
+- masuk kedalam direktory sample-login-with-go-mysql atau direktory project
+  ```cd sample-login-with-go-mysql```
+  
+- install package mysql
+  ```go get -u github.com/go-sql-driver/mysql```
+  
+- install package golang.org/x/crypto/bcrypt
+  ```go get -u golang.org/x/crypto/bcrypt```
+
+- terakhir, jalankan perintah di bawah ini untuk running program
 
  ```go run main.go ```
 
